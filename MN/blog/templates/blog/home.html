@@ -1,0 +1,142 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<div class="py-5 h-100 w-100" style="background-image: url(&quot;https://static.pingendo.com/cover-stripes.svg&quot;); background-position: right bottom; background-size: cover;">
+    <div class="container">
+      <div class="row">{% if user.is_authenticated %}
+        <div class="col-md-6">
+
+          <div class="bg-white py-3 " style="background-image: linear-gradient(to left bottom, rgba(81, 155, 245, 0.89), rgba(10, 201, 235, 0.39)); background-size">
+          <div class="mx-auto col-md-12" style="background-image: linear-gradient(to left bottom, rgba(27, 122, 238, 0.89), rgba(27, 232, 138, 0.89)); background-size: 100%;">
+            <h1 class="text-center" style="">Ostatnio dodane Wnioski</h1>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <li class=" border-0 list-group-item d-flex justify-content-between align-items-center"> MY LISTS <i class="fa fa-list text-muted fa-lg"></i></li>
+              </div>
+              <div class="col-md-12">
+                <div class="card bg-white mb">
+                  <button type="button" class="btn btn-link">Zwolnienie 14.04.2020 Janusz Myskała</button>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="card bg-light mb">
+                  <div class="card bg-white mb">
+                    <button type="button" class="btn btn-link">Zwolnienie 14.04.2020 Janusz Myskała</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="card bg-light mb">
+                  <div class="card bg-white mb">
+                    <button type="button" class="btn btn-link">Zwolnienie 14.04.2020 Janusz Myskała</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="card bg-light mb">
+                  <div class="card bg-white mb">
+                    <button type="button" class="btn btn-link">Zwolnienie 14.04.2020 Janusz Myskała</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="card bg-light mb">
+                  <div class="card bg-white mb">
+                    <button type="button" class="btn btn-link">Zwolnienie 14.04.2020 Janusz Myskała</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="card bg-light mb">
+                  <div class="card bg-white mb">
+                    <button type="button" class="btn btn-link">Zwolnienie 14.04.2020 Janusz Myskała</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+         {% else %}
+          {% endif %}
+
+        <div class="p-5 bg-white ml-auto col-md-6 border" style="">
+          <h1>Witamy w Office App</h1>
+          <p class="mb-3">Aplikacja Office App wspaniale sprawdzi się w Twojej Firmie! To dzięki niej osiągniejsz płyność przepływu informacji administracyjnych! Nie zwlekaj, zarejestruj się wykup licencję i ciesz się z nieskończonych możliwości!!!</p>
+          <div class="mx-auto col-md-12">
+            <p class="mb-3 lead">Follow us</p>
+            <div class="row">
+              <div class="col-md-12 d-flex align-items-center justify-content-between"> <a href="#">
+                  <i class="d-block fa fa-twitter text-muted fa-2x"></i>
+                </a> <a href="#">
+                  <i class="d-block fa fa-google-plus-official text-muted fa-2x"></i>
+                </a> <a href="#">
+                  <i class="d-block fa fa-instagram text-muted fa-2x"></i>
+                </a> <a href="#">
+                  <i class="d-block fa fa-pinterest-p text-muted fa-2x"></i>
+                </a> <a href="#">
+                  <i class="d-block fa fa-reddit text-muted fa-2x"></i>
+                </a> <a href="#">
+                  <i class="d-block fa fa-facebook-official text-muted fa-2x"></i>
+                </a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+        <div class="py-5 pi-draggable text-center">
+          <div class="py-3 text-center align-items-center d-flex text-light" style="background-image: linear-gradient(to left bottom, rgba(81, 155, 245, 0.89), rgba(10, 201, 235, 0.39)); background-size: 100%;">
+            <div class="container">
+              <div class="container">
+                <div class="row">
+                  <div class="mx-auto col-md-12" style="background-image: linear-gradient(to left bottom, rgba(106, 7, 228, 0.89), rgba(54, 32, 40, .95)); background-size: 100%;">
+                    <h1 class="text-center" style="">Meet&nbsp;the team</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2 col-6 p-4 border border-dark rounded-0"> {% load static %}<img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="{% static 'blog/female.jpg' %}" width="100" alt="Card image cap">
+                    <h4> <b>Ola</b></h4>
+                    <p>CEO</p>
+                  </div>
+                  <div class="col-lg-2 col-6 p-4 rounded-0 border border-dark">{% load static %} <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="{% static 'blog/male.png' %}" width="100" alt="Card image cap">
+                    <h4> <b>Mateusz</b></h4>
+                    <p>Co-founder</p>
+                  </div>
+                  <div class="col-lg-2 col-6 p-4 border border-dark rounded-0"> {% load static %}<img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="{% static 'blog/male.png' %}" width="100">
+                    <h4> <b>Sasza</b></h4>
+                    <p>CFO</p>
+                  </div>
+                  <div class="col-lg-2 col-6 p-4 border border-dark rounded-0">{% load static %} <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="{% static 'blog/male.png' %}" width="100">
+                    <h4> <b>Paweł</b></h4>
+                    <p>CTO</p>
+                  </div>
+                  <div class="col-lg-2 col-6 p-4 border border-dark rounded-0"> {% load static %}<img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="{% static 'blog/male.png' %}" width="100">
+                    <h4> <b>Anton</b></h4>
+                    <p>COO</p>
+                  </div>
+                  <div class="col-lg-2 col-6 p-4 border border-dark rounded"> {% load static %}<img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="{% static 'blog/male.png' %}" width="100">
+                    <h4> <b>Sebastian</b></h4>
+                    <p>CMO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    {% for post in posts %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
+
+
+
